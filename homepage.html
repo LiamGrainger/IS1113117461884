@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html>
-  
+   <link rel="int_pages" href="int_pages.css" type="text/css">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <head>
-      <link rel="stylesheet" href="mystylesheet.css" type="text/css"/> 
-     <div class="topnav">
-  <a class="active" href="homepage.html">Home</a>
-  <a href="cv/cv_page1.html">Curriculum Vitae</a>
-  <a href="Interests/sports.html">Interests</a>
-  
-  <a href="ebusiness/Ebus1.php">Ebus1</a>
-</div>
-            <title>IS1113</title>
-            
-           
-            
-        </head>
-        <body background = "https://topdrawer.aamt.edu.au/var/aamt/storage/images/media/tdt/patterns/p_cm_m5_fig3/278514-1-eng-AU/P_CM_M5_fig3.png" >
-          
-          </br>
-            <h1> 117461884 - IS1113 Project!</h1>
-                
-            </br>
-            
 
-            
-      
-        </body>
+    <head>
+            <link rel="stylesheet" href="mystylesheet.css" type="text/css"/> 
+           
+           
+            <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()"><img src="<img "https://hans.org/themes/hans/images/threelines.png"></span>
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  ...
+</div>
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+            <title>IS1113</title>
+            <style>
+                
+            </style>
+  
+         
+   </head>
+   
+ 
+    <body style="size:1040px;height:960px;background:url('http://eskipaper.com/images/hd-wallpaper-4.jpg') no-repeat; background-size: cover">
+       
+     
+    
+    </body>
     </html>
