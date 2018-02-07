@@ -3,18 +3,99 @@
    
 
 <head>
-          <!-- Bootstrap -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-            <link rel="stylesheet" href="mystylesheet.css" type="text/css"/> 
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+              <!-- Bootstrap -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+                <link rel="stylesheet" href="mystylesheet.css" type="text/css"/> 
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <div class="topnav">
-            <a class="active" href="homepage.html">Home</a>
-            <a href="cv/cv_page1.html">Curriculum Vitae</a>
-            <a href="Interests/sports.html">Interests</a>
-            <a href="ebusiness/Ebus1.php">Ebus1</a>
-            
+    <style>
+                body {
+                font-family: "Lato", sans-serif;
+                transition: background-color .5s;
+    
+                }
+
+                .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #ffffff;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+                }
+
+                .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #000000;
+                display: block;
+                transition: 0.3s;
+                }
+
+               .sidenav a:hover {
+                color: #5c5c5c;
+                }
+
+               .sidenav .closebtn {
+               position: absolute;
+               top: 0;
+               right: 25px;
+               font-size: 36px;
+               margin-left: 50px;
+               }
+
+               #main {
+               transition: margin-left .5s;
+               padding: 16px;
+               }
+
+             @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+              }
+    </style>
+    </head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  </br>
+  </br>
+  <hr>
+  <a href="homepage/html">Home</a>
+  <hr>
+ <a href="ebusiness/Ebus1.php">E-Business</a>
+ <hr>
+ <a href="Interests/sports.html">Interests</a>
+ <hr>
+ <a href="cv/cv_page1.html">CV</a>
+ <hr>
+  
+</div>
+
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+</div>
+</body>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0, 0, 0, 1)" ;
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
            <title>Personal Details</title>
 </head>
 
@@ -26,6 +107,7 @@
             <p><strong>Phone:</strong> (087)1327842</p>
             <p><strong>Email:</strong> 117461884@umail.ucc.ie</p>
             <a href="cv_page2.html" class="btn btn-dark">Next</a>
+            
             
 </body>
 

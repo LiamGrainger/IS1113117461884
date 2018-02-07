@@ -4,21 +4,113 @@
             <title>Education</title>
             <link rel="stylesheet" href="mystylesheet.css" type="text/css"/>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-            
+            <style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #5c5c5c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  </br>
+  </br>
+  <hr>
+  <a href="homepage/html">Home</a>
+  <hr>
+ <a href="ebusiness/Ebus1.php">E-Business</a>
+ <hr>
+ <a href="Interests/sports.html">Interests</a>
+ <hr>
+ <a href="cv/cv_page1.html">CV</a>
+ <hr>
+  
+</div>
+
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+</div>
+</body>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0, 0, 0, 1)" ;
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
             
         </head>
         <body>
-            <h1 class+"mainheading">Educational Details</h1
-            <p><strong>College:</strong> UCC</p>
-            <p><strong>Course:</strong> BIS</p>
-            <p><strong>Year:</strong> First Year</p>
+            <h1 class+"mainheading">Educational Details</h1>
+            </br>
+            </br>
+            <h2> Primary Education</h2>
+            <p><strong>School: </strong> St.Columba's Boys National School ,Douglas</p>
+            <p><strong>Duration: </strong> 2003 - 2011</p>
+            <p><strong>Extra-Curricular: </strong>Student Council and Green Committee Member</p>
           
             
             
             <br/>
-            
-            <p><strong>College:</strong> Rochestown College</p>
-             <p><strong>Years</strong> 2011-2017</p>
+            <h2> Secondary Education</h2>
+            <p><strong>College: </strong> St.Francis College, Rochestown</p>
+             <p><strong>Duration: </strong> 2011-2017</p>
+             <p><strong>Examinations: </strong> Junior and Leaving Certificate Exams</p>
+             <p><strong>Exam Subjects: </strong>History,English,Irish,Business,Economics,French,Project Maths</p>
+             
              
              
          
