@@ -3,15 +3,34 @@
 
 #section1{
     
-   background: url(http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1500660066/travel-hacks-opener-TRAVELHACK0717.jpg?itok=HgP9J2B_);
+   background: url(https://www.svgrepo.com/show/96598/business-man-walking-with-suitcase.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
+    background-size: 400px 200px;
+    background-position: center
+    
 }
 
 
-#section2{
-    background-color: rgb(44, 62, 80);
+#section2 {
+  display : flex;
+  align-items : center;
+}
+.half-width-img, .half-width-text {
+  width: 50%;
+}
+.half-width-text {
+  padding: 0 0px;
+    text-align: justify;
+}
+.half-width-img {
+      width:50%;
+    min-height:100%;
+    position:fixed;
+    height:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section3{
