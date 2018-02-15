@@ -1,49 +1,17 @@
 
-
-
 #section1{
-    
-   background: url(https://www.svgrepo.com/show/96598/business-man-walking-with-suitcase.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: white;
-    background-size: 400px 200px;
-    background-position: center
-    
+   background-color: rgb(238, 0, 90);
 }
 
-
-#section2 {
-  display : flex;
-  align-items : center;
-}
-.half-width-img, .half-width-text {
-  width: 50%;
-}
-.half-width-text {
-  padding: 0 0px;
-    text-align: justify;
-}
-.half-width-img {
-      width:50%;
-    min-height:100%;
-    position:fixed;
-    height:auto;
-    background-repeat: no-repeat;
-    background-size: cover;
+#section2{
+    background-color: rgb(44, 62, 80);
 }
 
 #section3{
     background-color: rgb(51, 153, 204);
-     
 }
 
 .section{
-        text-align:center;
-        color:white;
-       
+    text-align: center;
+    color: white;
 }
-
-
-
-
