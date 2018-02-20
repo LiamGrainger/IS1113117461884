@@ -1,115 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-     <link rel="stylesheet" href="cv1.css" type="text/css"/>
-<title>Personal Details</title>
-<meta charset="utf-8">
+<html>
+   
+
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <head>
+            <link rel="stylesheet" href="mystylesheet.css" type="text/css"/> 
+           
+ 
+ 
 <style>
-.footer {
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
     position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    color: black;
-    text-align: center;
-}
-* {
-    box-sizing: border-box;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-body {
-  margin: 0;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
 }
 
-/* Style the header */
-.header {
-    background-color: #ffffff ;
-    padding: 0px;
-    text-align: center;
+.sidenav a:hover {
+    color: #5c5c5c;
 }
 
-/* Create three unequal columns that floats next to each other */
-.column {
-    float: left;
-    padding: 10px;
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-/* Left  column */
-.column.leftside {
-    width: 30%;
-}
-/* Right Column */
-.column.rightside {
-    width: 30%;
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
 }
 
-/* Middle column */
-.column.middle {
-    width: 40%;
-    height: 100%; 
-    
-    
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    .column.side, .column.middle {
-        width: 100%;
-    }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 </style>
 </head>
 <body>
 
-<div class="header">
- <h1 style="font-family:Segoe UI">Personal Details</h1>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  </br>
+  </br>
   <hr>
+  <a href="homepage.html">Home</a>
+  <hr>
+ <a href="ebusiness/Ebus1.php">E-Business</a>
+ <hr>
+ <a href="Interests/sports.html">Interests</a>
+ <hr>
+ <a href="cv/cv_page1.html">CV</a>
+ <hr>
+ <a href="https://dashboard.heroku.com/apps/is1113117461884">Heroku</a>
+ <hr>
+ <a href="https://github.com/LiamGrainger/IS1113117461884/graphs/commit-activity">Github</a>
+ <hr>
+ <a href="Interests/cloudservices.html">Cloud Services</a>
+ <hr>
+  
+</div>
+
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+</body>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0, 0, 0, 1)" ;
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+            <title>Home</title>
+            <style>
+                
+            </style>
+  <html lang="en">
+<head>
+                 
+                <title>Personal Details</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+           
+            * {
+                box-sizing: border-box;
+            }
+
+                body {
+                  margin: 0;
+                }
+                
+                .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #5c5c5c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+                
+                /* Style the header */
+                .header {
+                    background-color: #ffffff ;
+                    padding: 0px;
+                    text-align: center;
+                }
+                
+                /* Create three unequal columns that floats next to each other */
+                .column {
+                    float: left;
+                    padding: 10px;
+                }
+                
+                /* Left  column */
+                .column.leftside {
+                    width: 30%;
+                    height:100%;
+                }
+                /* Right Column */
+                .column.rightside {
+                
+                    width: 30%;
+                    height:100%;
+                    border-style: dotted;
+                    
+                    
+                }
+                
+                /* Middle column */
+                .column.middle {
+                    width: 40%;
+                    height: 100%; 
+                    
+                    
+                }
+                
+                /* Clear floats after the columns */
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                
+                /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+                @media (max-width: 600px) {
+                    .column.side, .column.middle {
+                        width: 100%;
+                    }
+                }
+</style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  </br>
+  </br>
+  <hr>
+  <a href="homepage.html">Home</a>
+  <hr>
+ <a href="ebusiness/Ebus1.php">E-Business</a>
+ <hr>
+ <a href="Interests/sports.html">Interests</a>
+ <hr>
+ <a href="cv/cv_page1.html">CV</a>
+ <hr>
+ <a href="https://dashboard.heroku.com/apps/is1113117461884">Heroku</a>
+ <hr>
+ <a href="https://github.com/LiamGrainger/IS1113117461884/graphs/commit-activity">Github</a>
+ <hr>
+ <a href="Interests/cloudservices.html">Cloud Services</a>
+ <hr>
+  
+</div>
+
+<div class="header">
+             <h1 style="font-family:Segoe UI">Personal Details</h1>
+              <hr>
 </div>
 
 
 
 <div class="row">
-  <div class="column leftside">
+     <div class="column leftside">
     
-    <p><img src="https://yt3.ggpht.com/-z0d0Ap3BqFA/AAAAAAAAAAI/AAAAAAAAAAA/MUUJazhTfjQ/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" border="5" height="400" width ="400"></img></p>
-  </div>
-  <div class="column middle">
+        <p><img src="https://yt3.ggpht.com/-z0d0Ap3BqFA/AAAAAAAAAAI/AAAAAAAAAAA/MUUJazhTfjQ/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" border="5" height="400" width ="400"></img></p>
+           <form id = "linkedin" action = "https://www.linkedin.com/in/liam-grainger-340141151/">
+        <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/LinkedIn_logo_In-Black.svg/1024px-LinkedIn_logo_In-Black.svg.png" height="40" width="40" />
+        
+    
+     <form id = "facebook" action = "http://www.quickmeme.com/meme/35ci0i">
+        <input type="image" src="https://png.icons8.com/metro/1600/facebook.png" height ="40" width="40" />
+        
+        <form id = "twitter" action = "https://www.viewbirds.com/">
+        <input type="image" src="http://yourblackworld.net/wp-content/uploads/2016/03/black-twitter.jpg" height ="40" width="40" />
+        
+        <form id = "youtube" action = "http://wwww.youtube.com">
+            <input type="image" src="http://simpleicon.com/wp-content/uploads/youtube_1.svg" height="40" width="45" />
+            
+             <form id = "snapchat" action = "https://www.snapchat.com/l/en-gb/">
+            <input type="image" src="https://pre00.deviantart.net/bcae/th/pre/f/2015/354/a/7/black_and_white_snapchat_icone_by_yakoubbazzar-d9krgku.png" height="40" width="40" />
+            
+              <form id = "gplus" action = "https://en.wikipedia.org/wiki/Larry_Page">
+            <input type="image" src="https://image.flaticon.com/icons/svg/60/60818.svg" height="40" width="40" />
+        </form>
+          </div>
+          
+<div class="column middle">
       </br>
       
-    <table border="0" bordercolor="black" align="center" style="font-family:Segoe UI" >
+<table border="0" bordercolor="black" align="center" unprecedented >
         
        
         <tr>
-            <td height=80 width=10 ><img src="https://cdn.onlinewebfonts.com/svg/img_568657.png" align ="center" alt="person-icon"  height=100 width=90></img></td>
+            <td height=50 width=10 ><img src="https://cdn.onlinewebfonts.com/svg/img_568657.png" align ="center" alt="person-icon"  height=100 width=90></img></td>
             
             <td border=0 height= 80 width=100  >117461884</td>
             </tr>
         <tr>
-            <td height=80 width=10 ><img src="https://image.freepik.com/free-icon/first-annual-day-calendar-page-interface-symbol_318-58178.jpg" align ="center" alt="bday"  height=80 width=90></img></td>
+            <td height=50 width=10 ><img src="https://image.freepik.com/free-icon/first-annual-day-calendar-page-interface-symbol_318-58178.jpg" align ="center" alt="bday"  height=80 width=90></img></td>
             
-            <td border=3 height=80 width=100> February 28th 1999</td>
+            <td border=3 height=70 width=100> February 28th 1999</td>
         </tr>
         <tr>
-           <td height=80 width=10 ><img src="https://imageog.flaticon.com/icons/png/512/61/61121.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"  height=70 width=90></img></td>
+           <td height=50 width=10 ><img src="https://imageog.flaticon.com/icons/png/512/61/61121.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"  height=70 width=90></img></td>
             
-            <td border=4 height=80 width=100>Douglas, Cork</td>
+            <td border=4 height=0 width=90> Douglas, Cork </td>
         </tr>
         <tr>
-            <td height=80 width=10 ><img src="http://cdn.onlinewebfonts.com/svg/img_352137.png"  height=80 width=90></img></td>
+            <td height=50 width=10 ><img src="http://cdn.onlinewebfonts.com/svg/img_352137.png"  height=80 width=90></img></td>
             
             <td border=3 height=80 width=100> (085)01032018</td>
         </tr>
          <tr>
-            <td height=80 width=10 ><img src="https://image.flaticon.com/icons/svg/59/59965.svg"  height=80 width=90></img></td>
+            <td height=50 width=10 ><img src="https://image.flaticon.com/icons/svg/59/59965.svg"  height=80 width=90></img></td>
             
             <td border=3 height=80 width=100> liamgrainger@notmail.com </td>
         </tr>
@@ -118,33 +308,35 @@ body {
   </div>
   
   <div class="column rightside">
-    <h2>About Me</h2>
+<h1 style="font-family: Segoe UI"><img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAVTAAAAJDNlZDY0OWFmLTk4ODMtNGZiNy04NGE1LWE3YjU3MTVmNDMyZQ.jpg" height="60" width="110" alt="tack" /> About Me</h1>
+
+   
+    
     <hr>
-    <p></p>
+    <p style="font-family:Segoe UI"><font size="2">Hello there! My name is Liam Grainger and I am a first year BIS Student in UCC. However, there's much more to me than that. As you'll see in following pages, I currently have a part-time job and have a keen interest in a myriad of sports. I live with my two brothers, one older and one younger, as well as my parents, in the suburbs of Cork City.
+    or me, choosing BIS was an easy choice.The variety of modules and electives will undoubtedly prepare oneself for a future career in the IT and Business field. The role and ability of IT has always fascinated me and the Business aspect was one of the major factors in me choosing the course.</p>
+  <p style="font-family:Segoe UI"><font size="2">As Steve Jobs once said, "Why join the navy if you can be a pirate?" and for me, this embodies the multifarious possibilities which activities such as Web Development can bring. With a line of code, a concept can be molded into an authentic tool with oodles of ability to do something unprecedented.</p>
+  
   </div>
+  
 </div>
 
-<div class="footer">
-     <form id = "linkedin" action = "https://www.linkedin.com/in/liam-grainger-340141151/">
-        <input type="image" src="https://pbs.twimg.com/profile_images/614583061448036352/CBpFkPaz_400x400.png" height="40" width="40" />
-        
-    
-     <form id = "facebook" action = "http://www.quickmeme.com/meme/35ci0i">
-        <input type="image" src="http://www.championkitchens.com/images/fb_large.png" height ="40" width="40" />
-        
-        <form id = "twitter" action = "https://www.viewbirds.com/">
-        <input type="image" src="https://pbs.twimg.com/profile_images/875087697177567232/Qfy0kRIP.jpg" height ="40" width="40" />
-        
-        <form id = "youtube" action = "http://wwww.youtube.com">
-            <input type="image" src="https://img.mediatek.com/1700/mediatek-labs-imgs/images/a3076d4d0cd40a6d55074216beaed9b3.png" height="40" width="45" />
-            
-             <form id = "snapchat" action = "https://www.snapchat.com/l/en-gb/">
-            <input type="image" src="https://assets.materialup.com/uploads/8ea5e446-5d16-4585-b051-ef6a1de40eec/teaser.png" height="40" width="40" />
-            
-              <form id = "gplus" action = "https://en.wikipedia.org/wiki/Larry_Page">
-            <input type="image" src="https://cdn.worldvectorlogo.com/logos/google-plus.svg" height="40" width="40" />
-        </form>
-        </div>
+
+ 
+ <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0, 0, 0, 1)" ;
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
  
 
 
@@ -154,3 +346,4 @@ body {
   
 </body>
 </html>
+         
