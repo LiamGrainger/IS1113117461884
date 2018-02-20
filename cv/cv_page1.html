@@ -1,118 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-   
-
 <head>
-              <!-- Bootstrap -->
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-                <link rel="stylesheet" href="mystylesheet.css" type="text/css"/> 
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="cv1.css" type="text/css"/>
+<title>Personal Details</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
 
-    <style>
-                body {
-                font-family: "Lato", sans-serif;
-                transition: background-color .5s;
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #ffffff ;
+    padding: 0px;
+    text-align: center;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left  column */
+.column.leftside {
+    width: 30%;
+}
+/* Right Column */
+.column.rightside {
+    width: 30%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 40%;
+    height: 100%; 
     
-                }
-
-                .sidenav {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color: #ffffff;
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 60px;
-                }
-
-                .sidenav a {
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 25px;
-                color: #000000;
-                display: block;
-                transition: 0.3s;
-                }
-
-               .sidenav a:hover {
-                color: #5c5c5c;
-                }
-
-               .sidenav .closebtn {
-               position: absolute;
-               top: 0;
-               right: 25px;
-               font-size: 36px;
-               margin-left: 50px;
-               }
-
-               #main {
-               transition: margin-left .5s;
-               padding: 16px;
-               }
-
-             @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-              }
-    </style>
-    </head>
-<body>
-
-    <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          </br>
-          </br>
-         <hr>
-              <a href="homepage/html">Home</a>
-         <hr>
-             <a href="ebusiness/Ebus1.php">E-Business</a>
-         <hr>
-             <a href="Interests/sports.html">Interests</a>
-         <hr>
-             <a href="cv/cv_page1.html">CV</a>
-         <hr>
-          
-    </div>
-
-
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
-</body>
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0, 0, 0, 1)" ;
+    
 }
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-</script>
-           <title>Personal Details</title>
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+</style>
 </head>
-
 <body>
-                  
-            <h1 class="main-heading">Personal Details</h1>
-            </br>
-         
-    
-            <p><strong>Name:</strong> Liam Grainger</p>
-            <p><strong>Address:</strong> Douglas,Cork</p>
-            <p><strong>Phone:</strong> (087)1327842</p>
-            <p><strong>Email:</strong> 117461884@umail.ucc.ie</p>
-            <a href="cv_page2.html" class="btn btn-dark">Next</a>
-            
-            
-             <title>Personal Details</title>
-</body>
 
+<div class="header">
+  <h1>Personal Details</h1>
+  <hr>
+</div>
+
+
+
+<div class="row">
+  <div class="column leftside">
+    
+    <p><img src="https://yt3.ggpht.com/-z0d0Ap3BqFA/AAAAAAAAAAI/AAAAAAAAAAA/MUUJazhTfjQ/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" border="5" height="400" width ="400"></img></p>
+  </div>
+  <div class="column middle">
+      </br>
+      
+    <table border="5" bordercolor="black" align="center">
+        <tr>
+            <th colspan="3">Liam Grainger</th> 
+        </tr>
+       
+        <tr>
+            <td><img src="https://cdn.onlinewebfonts.com/svg/img_568657.png" alt="person-icon" border=3 height=80 width=0></img></td>
+            <td>Student Number</td>
+            <td>117461884</td>
+        </tr>
+        <tr>
+            <td>SSC Ultimate Aero TT  TopSpeed</td>
+            <td>United States</td>
+            <td border=3 height=100 width=100>Photo1</td>
+        </tr>
+        <tr>
+            <td>Koenigsegg CCX</td>
+            <td>Ängelholm, Sweden</td>
+            <td border=4 height=100 width=300>Photo1</td>
+        </tr>
+        <tr>
+            <td>Saleen S7</td>
+            <td>Irvine, California, United States</td>
+            <td border=3 height=100 width=100>Photo1</td>
+        </tr>
+    </table>
+  
+  </div>
+  
+  <div class="column rightside">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+</div>
+
+<div class="footer">
+     <form id = "linkedin" action = "https://www.linkedin.com/in/liam-grainger-340141151/">
+        <input type="image" src="https://pbs.twimg.com/profile_images/614583061448036352/CBpFkPaz_400x400.png" height="40" width="40" />
+        
+    
+     <form id = "facebook" action = "http://www.quickmeme.com/meme/35ci0i">
+        <input type="image" src="http://www.championkitchens.com/images/fb_large.png" height ="40" width="40" />
+        
+        <form id = "twitter" action = "https://www.viewbirds.com/">
+        <input type="image" src="https://pbs.twimg.com/profile_images/875087697177567232/Qfy0kRIP.jpg" height ="40" width="40" />
+        
+        <form id = "youtube" action = "http://wwww.youtube.com">
+            <input type="image" src="https://img.mediatek.com/1700/mediatek-labs-imgs/images/a3076d4d0cd40a6d55074216beaed9b3.png" height="40" width="45" />
+            
+             <form id = "snapchat" action = "https://www.snapchat.com/l/en-gb/">
+            <input type="image" src="https://assets.materialup.com/uploads/8ea5e446-5d16-4585-b051-ef6a1de40eec/teaser.png" height="40" width="40" />
+            
+              <form id = "gplus" action = "https://en.wikipedia.org/wiki/Larry_Page">
+            <input type="image" src="https://cdn.worldvectorlogo.com/logos/google-plus.svg" height="40" width="40" />
+        </form>
+        </div>
+ 
+
+
+
+
+
+  
+</body>
 </html>
