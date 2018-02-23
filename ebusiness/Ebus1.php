@@ -6,11 +6,24 @@
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>
-
+<style>
+  article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
     </head>
     
     <body>
-        
+        <h1 text-align=centre>Welcome to Liam Grainger's E-Business</h1>
+        <article>
+  
+  <p>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes pre-packaged with essential tools for popular programming languages including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your development machine to start new projects. </p>
+  <p>Our creative vision will inspire customer confidence and drive growth in your revenue with dynamic calls to action. Weather your looking for a fresh approach on your communications through to branding and identity Cloud 9 have the solution to meet your needs.</p>
+</article>
+  
             <h4>Select a Product</h4>
             
             <br/>
