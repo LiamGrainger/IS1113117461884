@@ -8,7 +8,7 @@
   
   <style>
   body {
- background-color:  #FFFFFF;
+ background-image: url("https://s-media-cache-ak0.pinimg.com/originals/05/d9/c4/05d9c42dc672776606f8f9758cbfe23b.png");
 
 }
 #divWrapper {
@@ -70,49 +70,6 @@ margin: 5px auto;
                                           ;
                                            text-align: right;
                                         }
-                                             .sidenav {
-                                               height: 100%;
-                                            width: 0;
-                                            position: fixed;
-                                            z-index: 1;
-                                            top: 0;
-                                            left: 0;
-                                            background-color: #ffffff;
-                                            overflow-x: hidden;
-                                            transition: 0.5s;
-                                            padding-top: 60px;
-                                        }
-                                        
-                                        .sidenav a {
-                                            padding: 8px 8px 8px 32px;
-                                            text-decoration: none;
-                                            font-size: 25px;
-                                            color: #000000;
-                                            display: block;
-                                            transition: 0.3s;
-                                        }
-                                        
-                                        .sidenav a:hover {
-                                            color: #5c5c5c;
-                                        }
-                                        
-                                        .sidenav .closebtn {
-                                            position: absolute;
-                                            top: 0;
-                                            right: 25px;
-                                            font-size: 36px;
-                                            margin-left: 50px;
-                                        }
-                                        
-                                        #main {
-                                            transition: margin-left .5s;
-                                            padding: 16px;
-                                        }
-                                        
-                                        @media screen and (max-height: 450px) {
-                                          .sidenav {padding-top: 15px;}
-                                          .sidenav a {font-size: 18px;}
-                                        }
                                         
                                         /* Create two equal columns that floats next to each other */
                                         .column {
@@ -146,6 +103,7 @@ margin: 5px auto;
                                        border-right: 2px solid black;
                                        border-left: 2px solid black;
                                     }    
+                                    
 
   
  
@@ -206,6 +164,57 @@ h1:before {
 }
 
 
+ .sidenav {
+                                               height: 100%;
+                                            width: 0;
+                                            position: fixed;
+                                            z-index: 1;
+                                            top: 0;
+                                            left: 0;
+                                            background-color: #ffffff;
+                                            overflow-x: hidden;
+                                            transition: 0.5s;
+                                            padding-top: 60px;
+                                        }
+                                        
+                                        .sidenav a {
+                                            padding: 8px 8px 8px 32px;
+                                            text-decoration: none;
+                                            font-size: 25px;
+                                            color: #000000;
+                                            display: block;
+                                            transition: 0.3s;
+                                        }
+                                        
+                                        .sidenav a:hover {
+                                            color: #5c5c5c;
+                                        }
+                                        
+                                        .sidenav .closebtn {
+                                            position: absolute;
+                                            top: 0;
+                                            right: 25px;
+                                            font-size: 36px;
+                                            margin-left: 50px;
+                                        }
+                                        
+                                        #main {
+                                            transition: margin-left .5s;
+                                            padding: 16px;
+                                        }
+                                        
+                                        @media screen and (max-height: 450px) {
+                                          .sidenav {padding-top: 15px;}
+                                          .sidenav a {font-size: 18px;}
+                                        }
+ 
+ 
+ span {
+background-color: white;
+border-style: solid;
+}
+ 
+ 
   </style>
   
   
@@ -220,6 +229,39 @@ h1:before {
 </head>
 
 <body>
+    <script>/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    <div id="mySidenav" class="sidenav">
+          
+                                          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                          </br>
+                                          </br>
+                                          <hr>
+                                          <a href="homepage.html">Home</a>
+                                          <hr>
+                                         <a href="ebusiness/Ebus1.php">E-Business</a>
+                                         <hr>
+                                         <a href="Interests/sports.html">Interests</a>
+                                         <hr>
+                                         <a href="cv/cv_page1.html">CV</a>
+                                         <hr>
+                                         <a href="https://dashboard.heroku.com/apps/is1113117461884">Heroku</a>
+                                         <hr>
+                                         <a href="https://github.com/LiamGrainger/IS1113117461884/graphs/commit-activity">Github</a>
+                                         <hr>
+                                         <a href="Interests/cloudservices.html">Cloud Services</a>
+                                         <hr>
+                                          
+                                        </div>
+        <span id=span style="font-size:30px;cursor:pointer"   onclick="openNav()">&#9776; </span>
    <div id="divWrapper">
   <div id="divHeader" text-align=centre>
      
@@ -402,7 +444,7 @@ h1:before {
  </div>
   </br>
   </br>
- <div class=title align="middle" style="font-size:180%"  ><h1>Work Experience</h1></div>
+ <div class=title align="middle" style="font-size:180%"  ><h1 >Work Experience</h1></div>
 
  <div> 
   <div class="column2"> 
