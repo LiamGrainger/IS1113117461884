@@ -4,22 +4,82 @@
 <style>
 div.container {
     width: 100%;
-    border: 1px solid gray;
+    background-image: url("https://img00.deviantart.net/dd7c/i/2015/010/0/3/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg");
+
+     
+
 }
+#headtop {
+    margin-top: -5px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #5c5c5c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 
 header, footer {
     padding: 1em;
     color: white;
-    background-color: black;
+    font-family: "Segoe UI";
+    background-color: white;
     clear: left;
     text-align: center;
+     border-bottom: 10px solid white;
+     border-top: 5px solid black;
+     background-image: url("http://claireregan.com/wp-content/uploads/2015/11/header-tony-1024x278.png");
+     background-size: contain ;
+    
 }
 
 nav {
     float: left;
     max-width: 550px;
-    margin: 0;
+    margin-left: 12px;
     padding: 1em;
+ 
+   
+ 
+
 }
 
 nav ul {
@@ -33,67 +93,137 @@ nav ul a {
 
 article {
     margin-left: 170px;
-    border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;
+    font-family: "MV Boli";
+    color: white;
 }
 </style>
 </head>
 <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  </br>
+  </br>
+  <hr>
+  <a href="cv/homepage.html">Home</a>
+ <hr>
+ <a href="cv_page1.html">CV</a>
+  <hr>
+   <a href="ebusiness/Ebus1.php">E-Business</a>
+   <hr>
+    <a href="ihomepage.html">Interests</a>
+    <hr>
+ <a href="https://dashboard.heroku.com/apps/is1113117461884">Heroku</a>
+ <hr>
+ <a href="https://github.com/LiamGrainger/IS1113117461884/graphs/commit-activity">Github</a>
 
+ <hr>
+  
+</div>
+ <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+<!-- CLOUD 9 -->
 <div class="container">
 
 <header>
-   <h1>Cloud Services </h1>
+   <h1 id="headtop" >Cloud Services </h1>
+
 </header>
   
 <nav>
-    
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YBpdL9hSac4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UX0mqLVlauk" style="border: 5px solid white;"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </nav>
 
 <article>
-  <h1>Cloud 9</h1>
+  <h1 align="left" >Cloud 9</h1>
+  <hr>
   <p>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes pre-packaged with essential tools for popular programming languages including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your development machine to start new projects. </p>
   <p>Our creative vision will inspire customer confidence and drive growth in your revenue with dynamic calls to action. Weather your looking for a fresh approach on your communications through to branding and identity Cloud 9 have the solution to meet your needs.</p>
-  <p>Our creative vision will inspire customer confidence and drive growth in your revenue with dynamic calls to action. Weather your looking for a fresh approach on your communications through to branding and identity Cloud 9 have the solution to meet your needs.</p>
-  <p>Our creative vision will inspire customer confidence and drive growth in your revenue with dynamic calls to action. Weather your looking for a fresh approach on your communications through to branding and identity Cloud 9 have the solution to meet your needs.</p>
+
 </article>
+
+<!-- SALESFORCE -->
 
 <div class="container">
 
 <header>
-   <h1>Cloud Services</h1>
+ 
 </header>
   
 <nav>
- <img src="http://www.freelogovectors.net/wp-content/uploads/2016/12/salesforce-logo.png" alt="SF" height="200" width="150">
+    <br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/46zV27umBuo" style="border: 5px solid white;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </nav>
 
 <article>
   <h1>Salesforce</h1>
-  <p>Salesforce.com, Inc. (styled in its logo as salesƒorce; abbreviated usually as SF or SFDC) is an American cloud computing company headquartered in San Francisco, California. Though its revenue comes from a customer relationship management (CRM) product, Salesforce also sells commercial applications of social networking through acquisition and internal development.</p>
-  <p>As of early 2016, it is one of the most highly valued American cloud computing companies with a market capitalization above $61 billion. In August 2017, Salesforce announced that it had reached the $10 billion revenue run rate becoming the first enterprise cloud company to do so.</p>
+  <hr>
+  <p>Salesforce is the world’s #1 Customer Relationship Management (CRM) platform. Their cloud-based applications for sales, service, marketing, and more don’t require IT experts to set up or manage, simply log in and start connecting to customers in a whole new way.</p>
+  <p>Of its cloud platforms and applications, the company is best known for its Salesforce customer relationship management (CRM) product, which is composed of Sales Cloud, Service Cloud, Marketing Cloud, Commerce Cloud, Analytics Cloud, IoT Cloud, App Cloud, Health Cloud, Financial Services Cloud, Force.com, and Chatter.  </p>
+
 </article>
+
+
+
+<!-- GMAIL -->
+
 <div class="container">
 
 <header>
-   <h1>Cloud Services</h1>
 </header>
   
 <nav>
-   <img src="https://pre00.deviantart.net/9e46/th/pre/i/2017/163/5/9/gmail__product_sans_logo_concept__by_cosmcala-da3xgqq.png" alt="SF" height="200" width="150">
+    <br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4EeY4WEbgYs" style="border: 5px solid white;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </nav>
 
 <article>
   <h1>Gmail</h1>
+  <hr>
   <p>Gmail is a free, advertising-supported email service developed by Google. Users can access Gmail on the web and using third-party programs that synchronize email content through POP or IMAP protocols. Gmail started as a limited beta release on April 1, 2004, and ended its testing phase on July 7, 2009.</p>
-  <p>At launch, Gmail had an initial storage capacity offer of one gigabyte per user, a significantly higher amount than competitors offered at the time. Today, the service comes with 15 gigabytes of storage. Users can receive emails up to 50 megabytes in size, including attachments, while they can send emails up to 25 megabytes. In order to send larger files, users can insert files from Google Drive into the message. Gmail has a search-oriented interface and a "conversation view" similar to an Internet forum. The service is notable among website developers for its early adoption of Ajax.</p>
+  <p>As of July 2017, Gmail has 1.2 billion active users worldwide, and was the first app on the Google Play Store to hit one billion installations on Android devices. According to a 2014 estimate, 60% of mid-sized US companies, and 92% of startups, were using Gmail. In addition to the native apps on iOS and Android, users can access Gmail through the web browser on a mobile device</p>
+
 </article>
 
-<footer>Liam Grainger (117461884)</footer>
+
+<!-- AMAZON WEB SERVICES -->
+<div class="container">
+
+<header>
+</header>
+  
+<nav>
+    <br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mZ5H8sn_2ZI" style="border: 5px solid white;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</nav>
+
+<article>
+  <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/2000px-AmazonWebservices_Logo.svg.png" height=60 width=150></h1>
+  <hr>
+  <p>Amazon Web Services (AWS) is a subsidiary of Amazon.com that provides on-demand cloud computing platforms to individuals, companies and governments, on a paid subscription basis. The technology allows subscribers to have at their disposal a full-fledged virtual cluster of computers, available all the time, through the Internet. </p>
+  <p>The AWS technology is implemented at server farms throughout the world, and maintained by the Amazon subsidiary. Fees are based on a combination of usage, the hardware/OS/software/networking features chosen by the subscriber, required availability, redundancy, security, and service options. </p>
+
+</article>
+
+
+<footer></footer>
 
 </div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0, 0, 0, 1)" ;
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
 </body>
 </html>
