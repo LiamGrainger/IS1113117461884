@@ -1,17 +1,190 @@
-
 #section1{
-    background-image: url("http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1483024431/local-new-york-city-SOUND1216.jpg?itok=m4nahVsJ");
+   background-image: url("https://static1.squarespace.com/static/54aff01fe4b0a7c65b7a4203/5910df322e69cf8bc0985645/5910ffda20099e9625a156a8/1494286427846/travel.gif?format=750w");
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: "Century Gothic";
+   font-size: 50px;
 }
 
 #section2{
-    background-color: rgb(44, 62, 80);
+    background-image: url("https://catholicquotationsdotcom.files.wordpress.com/2014/06/last-judgment-by-michelangelo-wallpaper.jpg");
+     background-repeat: no-repeat;
+         background-size: cover;
+
+    
 }
 
 #section3{
-    background-color: rgb(51, 153, 204);
+     background-image: url("https://newevolutiondesigns.com/images/freebies/new-york-manhattan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#section4{
+    background-image: url("http://www.bbc.co.uk/london/travel/downloads/tube_map.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#section5{
+ background-image: url("http://ak2.picdn.net/shutterstock/videos/19977382/thumb/1.jpg");
+    font-family: "times";
+    color: black;
+    text-align: center;
+    
 }
 
+#divtravelq{
+    margin-left: 40px;
+    margin-right: 40px;
+}
 .section{
     text-align: center;
     color: white;
+}
+
+
+#divHeader {
+ width: 100%;
+ height: 100%;
+ padding: 5px;
+margin: 5px auto;
+ text-align:center;
+ font-family: "Segoe UI";
+ 
+}
+
+#divbackground {
+    background-image: url("http://aceinfowayindia.com/blog/wp-content/uploads/2009/11/free_postcard_textures31.jpg");
+ background-size: contain;
+ background-repeat: no-repeat;
+  background-size: cover;
+
+ width: 600px;
+ 
+ background-color: #FFFFFF;
+ padding: 5px;
+margin: 5px auto;
+ text-align:center;
+ font-family: "Segoe UI";
+}
+#divbackgroundtwo {
+    background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/03/High-Res-POst-Card-Texture.jpg");
+ background-size: contain;
+ background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#divHeader {
+    position:relative;
+ width: 100%;
+ padding: 5px;
+ text-align: center;
+ font-family: "Segoe UI";
+ color:white;
+}
+
+
+
+#img1 { position: absolute; bottom: 0px; left: 0px;
+margin-left: 70px;
+    margin-bottom: 0px;
+     z-index: -1;
+   
+}
+
+#img2 { position: absolute; bottom: 0px; right: 0px;
+margin-left: 5px;
+    margin-bottom: 0px;
+     z-index: -2;
+
+}
+
+#img3 { position: absolute; bottom: 0px; left: 200px;
+margin-left: -50px;
+    margin-bottom: 0px;
+     z-index: -3;
+
+}
+#img4 { position: absolute; top: 0px; left: 0px;
+margin-left: 5px;
+    margin-top: -5px;
+    transform: rotate(180deg);
+
+     
+}
+#img5 { position: absolute; top: 0px; right: 0px;
+margin-left: 5px;
+    margin-top: -105px;
+    transform: rotate(180deg);
+
+     
+}
+#img6 {position: absolute; bottom: 0px; left: 200px;
+margin-left: 0px;
+z-index: -2;
+
+   
+}
+#img7 { position: absolute; top: 0px; left: 0px;
+margin-left: 15px;
+    margin-top: 0px;
+    transform: rotate(180deg);
+}
+
+#img8 { position: absolute; top: 0px; right: 0px;
+margin-left: 5px;
+    margin-top: -105px;
+    transform: rotate(180deg);
+}
+
+#img9 { position: absolute; bottom: 0px; left: 0px;
+margin-left: -200px;
+    margin-bottom: 0px;
+     z-index: -1;
+}
+
+#img10 {position: absolute; bottom: 0px; right: 0px;
+  
+margin-right: -100px;
+    margin-bottom: 0px;
+}
+    
+
+/* Round2 */
+
+#img11 {position: absolute; bottom: 0px; left: 200px;
+margin-left: 0px;
+z-index: -2;
+
+   
+}
+#img12 { position: absolute; top: 0px; left: 0px;
+margin-left: 15px;
+    margin-top: 0px;
+    transform: rotate(180deg);
+}
+
+#img13 { position: absolute; top: 0px; right: 0px;
+margin-left: 5px;
+    margin-top: -105px;
+    transform: rotate(180deg);
+}
+
+#img14 { position: absolute; bottom: 0px; left: 0px;
+margin-left: -100px;
+    margin-bottom: 0px;
+     z-index: -1;
+}
+
+#img15 {position: absolute; bottom: 0px; right: 0px;
+  
+margin-right: -100px;
+    margin-bottom: 0px;
+}
+
+#buttontrav {
+    position: absolute; bottom: 0px; right: 52%; left: 48%;
+    margin-bottom: 30px;
+    
+  
+
 }
