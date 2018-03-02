@@ -23,14 +23,31 @@
     background-image: url("http://www.bbc.co.uk/london/travel/downloads/tube_map.gif");
     background-size: cover;
     background-repeat: no-repeat;
+    
+    
 }
+
 #section5{
- background-image: url("http://ak2.picdn.net/shutterstock/videos/19977382/thumb/1.jpg");
+ background-image: url("http://travelhdwallpapers.com/wp-content/uploads/2017/03/Ireland-Wallpaper-2.jpg");
+    font-family: "Srgoe UI";
+    color: black;
+    text-align: center;
+     background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#section6{
+    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SImAn91gin31gtxk/flight-information-on-airport-arrivals-departures-board-timetable-and-schedules_rvlughke__F0014.png"); 
+background-color: white;
     font-family: "times";
     color: black;
     text-align: center;
+     background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid white;
     
 }
+
 
 #divtravelq{
     margin-left: 40px;
@@ -181,6 +198,77 @@ margin-right: -100px;
     margin-bottom: 0px;
 }
 
+#img20 { position: absolute; bottom: 0px; left: 0px;
+margin-left: -50px;
+    margin-bottom: 0px;
+     z-index: -1;
+   
+}
+
+#img21 { position: absolute; bottom: 0px; right: 0px;
+margin-left: 5px;
+    margin-bottom: 0px;
+     z-index: -1;
+
+}
+
+#img22 { position: absolute; bottom: 0px; left: 600px; right: 200px;
+    margin-bottom: 0px;
+
+
+}
+#img23 { position: absolute; top: 0px; left: 0px;
+margin-left: 5px;
+    margin-top: -5px;
+    transform: rotate(180deg);
+
+     
+}
+#img24 { position: absolute; top: 0px; right: 200px;
+margin-left: 5px;
+    margin-top: -105px;
+    transform: rotate(180deg);
+    z-index: -5;
+
+     
+}
+
+#img50 { position: absolute; bottom: 0px; left: 0px;
+margin-left: 70px;
+    margin-bottom: 0px;
+     z-index: -1;
+   
+}
+
+#img51 { position: absolute; bottom: 0px; right: 0px;
+margin-left: 5px;
+    margin-bottom: 0px;
+     z-index: -2;
+
+}
+
+#img52 { position: absolute; bottom: 0px; left: 200px;
+margin-left: 350px;
+    margin-bottom: -70px;
+     z-index: -1;
+
+}
+#img53 { position: absolute; top: 0px; left: 0px;
+margin-left: 5px;
+    margin-top: -5px;
+    transform: rotate(180deg);
+
+     
+}
+#img54 { position: absolute; top: 0px; right: 0px;
+margin-left: 5px;
+    margin-top: -50px;
+    transform: rotate(180deg);
+
+     
+}
+
+
 #buttontrav {
     position: absolute; bottom: 0px; right: 52%; left: 48%;
     margin-bottom: 30px;
@@ -188,3 +276,4 @@ margin-right: -100px;
   
 
 }
+
