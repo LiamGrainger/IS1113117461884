@@ -48,6 +48,84 @@ background-color: white;
     
 }
 
+header, footer {
+    padding: 1em;
+    color: black;
+    font-family: "Segoe UI";
+    background-color: white;
+    clear: left;
+    margin-top: 10px;
+    text-align: center;
+     border: 5px solid black;
+     margin-left:-20px;
+       margin-right:-20px;
+         background-image: url("http://ecosoftt.org/wp-content/uploads/2014/04/water-smart-accessories-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+     
+    
+}
+div.container {
+    width: 100%;
+ background-image: url("http://www.wallpaperbetter.com/wallpaper/319/718/387/sand-wave-beach-1080P-wallpaper.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border-right: 5px solid black;
+border-left: 5px solid black;
+border-bottom: 5px solid black;
+border-top: 5px solid black;
+
+}
+#colourissue {
+    background-image: url("https://www.fotor.com/images2/features/backgrounds-new/Cute/Cute_04_A-small-map.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+        border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    font-family: "Segoe UI";
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+#iframemaldives {
+    margin-left: -35px;
+    border: 5px solid black;
+}
+
+nav {
+    float: left;
+    max-width: 550px;
+    margin-left: 12px;
+    padding: 1em;
+ 
+   
+ 
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    padding: 1em;
+    overflow: hidden;
+    font-family: "MV Boli";
+    color: white;
+}
+
 
 #divtravelq{
     margin-left: 40px;
@@ -58,7 +136,9 @@ background-color: white;
     color: white;
 }
 
-
+#divHeaderTwo {
+    color:black;
+}
 #divHeader {
  width: 100%;
  height: 100%;
@@ -89,14 +169,30 @@ margin: 5px auto;
  background-repeat: no-repeat;
   background-size: cover;
 }
+#divbackgroundsafety {
+    background-image: url("http://apex.aero/wp-content/uploads/2015/06/889fe6e61d52643cf5eb0de724aca465.jpg");
+ background-size: contain;
+ background-repeat: no-repeat;
+  background-size: cover;
+
+ width: 600px;
+ 
+ background-color: #FFFFFF;
+ padding: 5px;
+margin: 5px auto;
+ text-align:center;
+ font-family: "Segoe UI";
+}
 
 #divHeader {
+    
     position:relative;
+    
  width: 100%;
  padding: 5px;
  text-align: center;
  font-family: "Segoe UI";
- color:white;
+ color:black;
 }
 
 
@@ -249,7 +345,7 @@ margin-left: 5px;
 
 #img52 { position: absolute; bottom: 0px; left: 200px;
 margin-left: 350px;
-    margin-bottom: -70px;
+    margin-bottom: 0px;
      z-index: -1;
 
 }
