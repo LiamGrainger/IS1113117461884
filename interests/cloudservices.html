@@ -1,182 +1,172 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-div.container {
-    width: 100%;
-    background-image: url("https://img00.deviantart.net/dd7c/i/2015/010/0/3/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg");
 
-     
-
-}
-#headtop {
-    margin-top: -5px;
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000000;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #5c5c5c;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-header, footer {
-    padding: 1em;
-    color: white;
-    font-family: "Segoe UI";
-    background-color: white;
-    clear: left;
-    text-align: center;
-     border-bottom: 10px solid black;
-     border-top: 5px solid black;
-     background-image: url("http://claireregan.com/wp-content/uploads/2015/11/header-tony-1024x278.png");
-     background-size: contain ;
-    
-}
-
-nav {
-    float: left;
-    max-width: 550px;
-    margin-left: 12px;
-    padding: 1em;
- 
-}
-.jack {
-    font-family: "Segoe UI";
-    
-}
-
-
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-   
-nav ul a {
-    text-decoration: none;
-}
-
-article {
-    margin-left: 170px;
-    padding: 1em;
-    overflow: hidden;
-    font-family: "Segoe UI";
-    color: white;
-}
+      <style>     /* A Div Container will contain the other content for each Cloud Service */
+                        div.container {
+                            width: 100%;
+                            background-image: url("https://img00.deviantart.net/dd7c/i/2015/010/0/3/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg");
+            
+                 
+            
+                            }
+                            /* Bring the Heading Down from the Top, so it's not too cramped */
+                            #headtop {
+                                margin-top: -6px;
+                            }
+                            /* Below is the code for the Nav Bar, which is the same as the Code used on the Homepage */
+                            .sidenav {
+                                height: 100%;
+                                width: 0;
+                                position: fixed;
+                                z-index: 1;
+                                top: 0;
+                                left: 0;
+                                background-color: #ffffff;
+                                overflow-x: hidden;
+                                transition: 0.5s;
+                                padding-top: 60px;
+                            }
+                            
+                            .sidenav a {
+                                padding: 8px 8px 8px 32px;
+                                text-decoration: none;
+                                font-size: 25px;
+                                color: #000000;
+                                display: block;
+                                transition: 0.3s;
+                            }
+                            
+                            .sidenav a:hover {
+                                color: #5c5c5c;
+                            }
+                            
+                            .sidenav .closebtn {
+                                position: absolute;
+                                top: 0;
+                                right: 25px;
+                                font-size: 36px;
+                                margin-left: 50px;
+                            }
+            
+                         
+            
+            /* This is the heading and footer CSS, it will display the Cloud Design */
+            header, footer {
+                padding: 1em;
+                color: white;
+                font-family: "Segoe UI";
+                background-color: white;
+                clear: left;
+                text-align: center;
+                 border-bottom: 10px solid black;
+                 border-top: 5px solid black;
+                 background-image: url("http://claireregan.com/wp-content/uploads/2015/11/header-tony-1024x278.png");
+                 background-size: contain ;
+                
+            }
+                    /* This is the Code for the Nav Panel at the side which will include the Logo of each CLoud Service */
+                    nav {
+                        float: left;
+                        max-width: 550px;
+                        margin-left: 12px;
+                        padding: 1em;
+                     
+                    }
+                    /* Font for the Heading on Jeff Bezos */
+                    .jack {
+                        font-family: "Segoe UI";
+                        
+                    }
+                    /* This is the Code for the Article which will include the information on the RHS */
+                    article {
+                        margin-left: 170px;
+                        padding: 1em;
+                        overflow: hidden;
+                        font-family: "Segoe UI";
+                        color: white;
+                    }
 </style>
 </head>
-<body>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  </br>
-  </br>
-  <hr>
-  <a href="cv/homepage.html">Home</a>
- <hr>
- <a href="cv_page1.html">CV</a>
-  <hr>
-   <a href="ebusiness/Ebus1.php">E-Business</a>
-   <hr>
-    <a href="ihomepage.html">Interests</a>
-    <hr>
- <a href="https://dashboard.heroku.com/apps/is1113117461884">Heroku</a>
- <hr>
- <a href="https://github.com/LiamGrainger/IS1113117461884/graphs/commit-activity">Github</a>
-
- <hr>
-  
-</div>
- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <body>      <!-- Below is the Siden Nav Code as seen previously -->
+                    <div id="mySidenav" class="sidenav">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      </br>
+                      </br>
+                      <hr>
+                      <a href="cv/homepage.html">Home</a>
+                     <hr>
+                     <a href="cv_page1.html">CV</a>
+                      <hr>
+                       <a href="ebusiness/Ebus1.php">E-Business</a>
+                       <hr>
+                        <a href="ihomepage.html">Interests</a>
+                        <hr>
+                     <a href="https://dashboard.heroku.com/apps/is1113117461884">Heroku</a>
+                     <hr>
+                     <a href="https://github.com/LiamGrainger/IS1113117461884/graphs/commit-activity">Github</a>
+                    
+                     <hr>
+                      
+                    </div>
+                    <!-- This is the Code to open up the Navigation Bar-->
+         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
 
 <!-- CLOUD 9 -->
-
-<div class="container">
-
-<header>
-   <h1 id="headtop" >Cloud Services </h1>
-
-</header>
+                    <!-- All this Information will be enclosed in a div/nav within this Container -->
+                    <div class="container">
+                   
+                    <!-- The Header -->
+                    <header>
+                    <h1 id="headtop" >Cloud Services </h1>
+                    </header>
+                   
+                     <!-- The SideNav with Logo --> 
+                    <nav>
+                    <br>
+                    <img src="https://www.mcvuk.com/.image/t_share/MTUzMDY4NjcxMjUyNjM2Njc5/cloud9-logojpg.jpg" width="560" height="315" style= "border:5px solid black">
+                    </nav>
+                   
+                    <!-- The Article with Informtion -->
+                    <article>
+                      <h1 align="left" >Cloud 9</h1>
+                      <hr>
+                    <p>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes pre-packaged with essential tools for popular programming languages including JavaScript, Python, PHP, and more, so you do not need to install files or configure your development machine to start new projects. </p>
+                     <p>Their creative vision will inspire customer confidence and drive growth in your revenue with dynamic calls to action. Weather your looking for a fresh approach on your communications through to branding and identity Cloud 9 have the solution to meet your needs.</p>
+                    <p>AWS Cloud9 makes collaborating on code easy. You can share your development environment with your team in just a few clicks and pair program together. While collaborating, your team members can see each other type in real time, and instantly chat with one another from within the IDE.</p>
+                    </article>
   
-<nav>
-    <br>
-<img src="https://www.mcvuk.com/.image/t_share/MTUzMDY4NjcxMjUyNjM2Njc5/cloud9-logojpg.jpg" width="560" height="315" style= "border:5px solid black">
-</nav>
+  <!-- Place YT videos in SideNav -->
+  
+                <div class="container">
+                  
+ <nav>
+                    <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FvclLeg2vEQ" style="border: 5px solid white;"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <br>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fwFoU_Wb-fU" style="border: 5px solid white;"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <br>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u1D1KVECjiY" style="border: 5px solid white;"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ </nav>
+<!-- Include Embedded Tweets in Article on Right -->
 
 <article>
-  <h1 align="left" >Cloud 9</h1>
-  <hr>
-  <p>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes pre-packaged with essential tools for popular programming languages including JavaScript, Python, PHP, and more, so you do not need to install files or configure your development machine to start new projects. </p>
-  <p>Their creative vision will inspire customer confidence and drive growth in your revenue with dynamic calls to action. Weather your looking for a fresh approach on your communications through to branding and identity Cloud 9 have the solution to meet your needs.</p>
-<p>AWS Cloud9 makes collaborating on code easy. You can share your development environment with your team in just a few clicks and pair program together. While collaborating, your team members can see each other type in real time, and instantly chat with one another from within the IDE.</p>
-</article>
-  
-  
-  <div class="container">
-  
-<nav>
-    <br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FvclLeg2vEQ" style="border: 5px solid white;"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<br>
-<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fwFoU_Wb-fU" style="border: 5px solid white;"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<br>
-<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u1D1KVECjiY" style="border: 5px solid white;"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</nav>
-
-<article>
-  <h1 class="jack" align="left"  style="font-size: 30px"><img src="http://jeffisms.org/wp-content/uploads/2017/02/jeff-2.png" border="5 solid black" height=100 width=150> <strong>Jeff Bezos (Amazon CEO) </strong></h1>
-  <hr>
-  
- <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Ten years ago today, we launched the first-ever Kindle. Happy 10th birthday <a href="https://twitter.com/AmazonKindle?ref_src=twsrc%5Etfw">@AmazonKindle</a> and thank you to all the Kindle readers and authors! <a href="https://t.co/qelfniBSK1">pic.twitter.com/qelfniBSK1</a></p>&mdash; Jeff Bezos (@JeffBezos) <a href="https://twitter.com/JeffBezos/status/932270037657726976?ref_src=twsrc%5Etfw">November 19, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Congratulations to <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a>. I for one give him my most open mind and wish him great success in his service to the country.</p>&mdash; Jeff Bezos (@JeffBezos) <a href="https://twitter.com/JeffBezos/status/796729498075099136?ref_src=twsrc%5Etfw">November 10, 2016</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Impressive launch and <a href="https://twitter.com/SpaceX?ref_src=twsrc%5Etfw">@SpaceX</a> will soon make Falcon 9 landings routine – so good for space! Kudos SpaceX!</p>&mdash; Jeff Bezos (@JeffBezos) <a href="https://twitter.com/JeffBezos/status/688815223558410240?ref_src=twsrc%5Etfw">January 17, 2016</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  <h1 class="jack" align="left"  style="font-size: 30px"><img src="http://jeffisms.org/wp-content/uploads/2017/02/jeff-2.png" border="5 solid black" height=100 width=150> <strong>Jeff Bezos (Amazon CEO) </strong></h1>
+                  <hr>
+                  
+                 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Ten years ago today, we launched the first-ever Kindle. Happy 10th birthday <a href="https://twitter.com/AmazonKindle?ref_src=twsrc%5Etfw">@AmazonKindle</a> and thank you to all the Kindle readers and authors! <a href="https://t.co/qelfniBSK1">pic.twitter.com/qelfniBSK1</a></p>&mdash; Jeff Bezos (@JeffBezos) <a href="https://twitter.com/JeffBezos/status/932270037657726976?ref_src=twsrc%5Etfw">November 19, 2017</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Congratulations to <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a>. I for one give him my most open mind and wish him great success in his service to the country.</p>&mdash; Jeff Bezos (@JeffBezos) <a href="https://twitter.com/JeffBezos/status/796729498075099136?ref_src=twsrc%5Etfw">November 10, 2016</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Impressive launch and <a href="https://twitter.com/SpaceX?ref_src=twsrc%5Etfw">@SpaceX</a> will soon make Falcon 9 landings routine – so good for space! Kudos SpaceX!</p>&mdash; Jeff Bezos (@JeffBezos) <a href="https://twitter.com/JeffBezos/status/688815223558410240?ref_src=twsrc%5Etfw">January 17, 2016</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 </article>
-  
+  <!-- Horizontal Divider to add Clarity -->
   <hr>
   
 
@@ -367,7 +357,6 @@ article {
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
     document.body.style.backgroundColor = "rgba(0, 0, 0, 1)" ;
 }
 
