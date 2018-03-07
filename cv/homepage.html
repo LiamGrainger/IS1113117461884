@@ -6,111 +6,107 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <head>
+<head>
+        <!-- Link to Stylesheet -->
             <link rel="stylesheet" href="mystylesheet.css" type="text/css"/> 
            
  
  
-<style>
-body {
-    font-family: "Lato", sans-serif;
-    transition: background-color .5s;
-    background-image: url("https://www.dealfuel.com/wp-content/uploads/2015/06/color5.png");
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000000;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #5c5c5c;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+    <style>
+            /* Code for the Nav-Bar */
+            body {
+                font-family: "Lato", sans-serif;
+                transition: background-color .5s;
+                background-image: url("https://www.dealfuel.com/wp-content/uploads/2015/06/color5.png");
+            }
+            
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #ffffff;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+            
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #000000;
+                display: block;
+                transition: 0.3s;
+            }
+            
+            .sidenav a:hover {
+                color: #5c5c5c;
+            }
+            
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+        </style>
 </head>
 <body>
+                <!-- This is the Code for the NavBar's Contenets  -->
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  </br>
-  </br>
-  <hr>
-  <a href="cv/homepage.html">Home</a>
- <hr>
- <a href="cv_page1.html">CV</a>
-  <hr>
-   <a href="ebusiness/EbusMenu.html">E-Business</a>
-   <hr>
-    <a href="ihomepage.html">Interests</a>
-    <hr>
- <a href="https://dashboard.heroku.com/apps/is1113117461884">Heroku</a>
- <hr>
- <a href="https://github.com/LiamGrainger/IS1113117461884/graphs/commit-activity">Github</a>
-
- <hr>
-  
+                <div id="mySidenav" class="sidenav">
+    
+                <!-- This will close the NavBar-->
+                        
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  </br>
+                  </br>
+                  <hr>
+                  <a href="cv/homepage.html">Home</a>
+                  <hr>
+                  <a href="cv_page1.html">CV</a>
+                  <hr>
+                  <a href="ebusiness/EbusMenu.html">E-Business</a>
+                  <hr>
+                  <a href="ihomepage.html">Interests</a>
+                  <hr>
+                  <a href="https://dashboard.heroku.com/apps/is1113117461884">Heroku</a>
+                  <hr>
+                  <a href="https://github.com/LiamGrainger/IS1113117461884/graphs/commit-activity">Github</a>
+                  <hr>
 </div>
 
+            <!-- This is the code to open up the NavBar -->
 
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            
+             <!-- This will give the tab/page name 'Title' -->
+        
+            <title>Home</title>
+         
 
 </body>
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0, 0, 0, 1)" ;
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
-}
+<script>
+            /* These are the two functions which will Open and Close the Nav Bar */
+                        function openNav() {
+                            document.getElementById("mySidenav").style.width = "250px";
+                            document.getElementById("main").style.marginLeft = "250px";
+                            document.body.style.backgroundColor = "rgba(0, 0, 0, 1)" ;
+                        }
+                        
+                        function closeNav() {
+                            document.getElementById("mySidenav").style.width = "0";
+                            document.getElementById("main").style.marginLeft= "0";
+                            document.body.style.backgroundColor = "white";
+                        }
 </script>
 
-
-            <title>Home</title>
-            <style>
-                
-            </style>
-  
-         
+           
 
    
 
