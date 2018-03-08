@@ -208,32 +208,32 @@ h1:before {
                  Total
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="total" name="total" value="0.00" readonly/>
              </label>
-              <hr size="3" color="black">
-             
-               <button onclick="calcSub()">Calculate Cost</button>
-              <button type="submit" id="btnProceed" disabled> Add to Shopping Cart</button>
- 
-             
-        </form>
-            
-   
-   
-            <a role="button" href="Ebus1.php">Clear Choice</a>
-   
-   
-   </div>
+               </div>
       
      
     
    </div>
   </div>
- 
+   <br/>
+        
+            <div class="shoppingcart"> 
+             </br>
+              </br>
+              <button class="shoppingcartstyle" type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+               </br>
+            </div>  
+              
+          </form>
+
+          <!-- button for calculating price breakdown of the selected option -->  
+           </br>
+          <button class="calcbutton" onClick="calcSub()">Calculate Cost</button>
+             
+          <br>
             
+          <!-- button for clearing the selected options -->    
+           </br>
+          <a class="cancelbutton" role="button" href="Ebus1.php">Clear Choice</a>
+        </div>
             
-            
-      
-    
-            
-           
-    </body>
 </html>
