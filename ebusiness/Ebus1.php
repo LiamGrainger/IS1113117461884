@@ -114,144 +114,91 @@ h1:before {
     </head>
     
     <body>
- 
- <br>
- <p align="center"><img src="https://cdn1.iconfinder.com/data/icons/social-productivity-line-art-4/128/shopping-cart2-512.png" height=100 width=100 alt="click"</p>
- <div class=title align="middle" style="font-size:180%" ><h1>Select a Product</h1>
-      <br>
-        <div>
-          <div class="row">
-  
-  <!-- SALESFORCE -->
-  
-  <div class="column"style="background-color:#ffffff;border-left: 3px solid black; border-top: 3px solid black;border-bottom: 3px solid black;border-right: 3px solid black ;">
-    <p align = center><img src="https://seeklogo.com/images/S/salesforce-logo-273F95FE60-seeklogo.com.png" height=100 width=130></p>
-    <p align =center>        
-                                 <input type="radio" checked onClick="disablebtnProceed()"/>
-            </p>
-            <p align=center><font size="5" face="Segoe UI" >  $100</font> </p>
-  </div>
- 
- <!-- CLOUD9 -->
-  <div class="column" style="background-color:#ffffff;border-top: 3px solid black;border-bottom: 3px solid black">
-    
-    <p align = center><img src="https://www.mt.nl/wp-content/uploads/2011/06/d38162fb94c72618b4fd6e4b3d384655-1308735004.png" height=100 width=100 ></p>
-                                 <p align =center>
-                                  <input type="radio" onClick="disablebtnProceed()"/>
-                                  
-                               </p>
-                               <p align=center><font size="5" face="Segoe UI" >  $200</font> </p>
-  </div>
-  
-  <!-- AWS -->
-  <div class="column" style="background-color:#ffffff;border-right: 3px solid black; border-left: 3px solid black;border-top: 3px solid black;border-bottom: 3px solid black">
-      <p align = center><img src="https://tenten.co/blog/wp-content/uploads/2011/01/Amazon-Makes-It-Easier-to-Host-a-Site-with-S3-on-the-Cheap-2.png" height=100 width= 160 ></p>
-    <p align=center>
-                               
-                                  <input type="radio" onClick="disablebtnProceed()"/>
-                        
-                          
-                                    </p>
-                                          <p align=center><font size="5" face="Segoe UI" >  $300</font> </p>
-                                         
-  </div>
-  
-  <!-- GMAIL -->
-  <div class="column"style="background-color:#ffffff; border-right: 3px solid black; border-top: 3px solid black;border-bottom: 3px solid black">
-  <p align = center><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" height=100 width=150></p>
-    <p align=center>
-                                  <input type="radio" onClick="disablebtnProceed()"/>
-                                 
-                                </p>
-                                 <p align=center><font size="5" face="Segoe UI" >  $300</font> </p>
-  </div>
-</div>
-                            
-                    
-                              <form method="POST" action="Ebus2.php">
-                                <!-- These are the Radio-Button Options for the Products -->
-                              
-            
-                                
-                               
-                                    
- 
-                                
-                                    
-
-                                
-                                
-        </div>
-            
-            <!-- The Rundown of Costs -->
-            
-            
-            <div id="divWrapper">
-  <div id="divHeader">
-   <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-ce95e9d2e86faee8a3a511af826f891e.png" height=100 width =100>
-   <h1 style=font-size:18px>Summary</h1>
-   <div id="divNavBartwo"> <img src="https://pbs.twimg.com/profile_images/791306253813354496/XXU9JV0o_400x400.jpg" height=50px width=50px>
-   <br>
-    <label for="subtotal">
-                                  Sub Total &#8212;
-                                  <input type="text" value="0.00" readonly/>
-                                </label>
-   <br>
-   <hr>
-    <label for="discount">
-                                  Discount @ 5% &nbsp;&nbsp;&nbsp; <input type="text" id="discount" name="discount" value="0.00" readonly/>
-                                   </br>
-                                  (- Discount)
-                                </label>
-                                <br>
-   <hr>
-   <label for="vat">
-                                  VAT @ 10% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="vat" name="vat" value="0.00" readonly/>
-                                 ( + VAT)
-                                </label>
-
-   <br>
-   <hr>
-  <label for="total">
-                                  Total
-                                  <input type="text" id="total" name="total" value="0.00" readonly/>
-                                   </br>
-                                  (- Discount + VAT)
-                                </label>
-   <br>
-   <hr>
-
-   
-   
-   
-   
-   
-   </div>
-      
-     
-    
-   </div>
-  </div>
- 
- 
-            
+   <h1 style="background-color:white;" class="mainheading"> Shop </h1>
+        </br>
+        <ul>
+           <li> <a class="active" href="Homepage"> Home </a></li>
+           <li> <a class="active" href="ebusiness/business.html"> Business Home </a></li>
+           <li> <a class="active" href="info.html"> About Us </a></li>
+           
         
         
-        <div class="shoppingcart"> 
+       </ul>
+       
+       <br/>
+       
+       <h2>Please Select a Product</h2>
+       <br/>
+        
+        <form method="POS1" action="Ebus2.php">
+            <label for="salesforce">
+                <input type="radio" id="salesforce" name="product" checked onclick="disablebtnProceed()"/>
+                Salesforce @ $100
+            </label>
+            
+            <br/>
+            <br/>
+            
+             <label for="cloud9">
+                <input type="radio" id="cloud9" name="product" onclick="disablebtnProceed()"/>
+                Cloud9 @ $200
+            </label>
+            <br/>
+            <br/>
+            
+             <label for="gmail">
+                <input type="radio" id="gmail" name="product"  onclick="disablebtnProceed()"/>
+                Gmail @ $400
+            </label>
+            
+            <br/>
+            <br/>
+            <label for "aws">
+                <input type="radio" id="aws" name="product" onclick="disablebtnProceed()"/>
+                AWS @ 300$
+            </label>
+            
+            <br/>
+            <br/>
+            
+            <label for="subtotal">
+                Sub Total
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="subtotal" value="0.00" readonly/>
+            </label>
+            
+            <br/>
+            <br/>
+            
+            <label for="discount">
+                Discount @ 5%
+                <input type="text" id="discount" value="0.00" readonly/>
+            </label>
+            
+            <br/>
+            <br/>
+            
+            <label for="vat">
+                VAT @ 10%
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="vat" value="0.00" readonly/>
+            </label>
              
-              <button class="shoppingcartstyle" type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
-               
-        </div>  
-              
-          </form>
-
-          <!-- Calculate the Costs Button -->  
-          
-          <button class="calcbutton" onClick="calcSub()">Calculate Cost</button>
+             <br/>
+             <br/>
+             <label for="total">
+                 Total
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="total" name="total" value="0.00" readonly/>
+             </label>
              
-            
-          <!-- Clear Button -->    
-          <a class="cancelbutton" role="button" href="Ebus1.php">Clear Choice</a>
+        <br/>
+        <br/>
+        <button type="submit" id="btnProceed" disabled> Add to Shopping Cart</button>
+        <a role="button" href="Ebus1.php">Clear Choice</a>
+             
+        </form>
         
+       <br/>
+       
+       
+        <button onclick="calcSub()">Calculate Cost</button>
     </body>
 </html>

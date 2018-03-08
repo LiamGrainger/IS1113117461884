@@ -1,6 +1,6 @@
 /* global $ */
 
-function calcSub() {
+function calcSub(){
     
     var argSubTotal;
     
@@ -21,28 +21,28 @@ function calcSub() {
 }
 
 
-function calcDisVatTotal(parmstotal){
-  var subtotal = parmstotal;
+function calcDisVatTotal(parmSubTotal){
+  var subTotal = parmSubTotal
   var discountAmt;
   var vatAmt;
   var totalPrice;
 
-  discountAmt = (parmstotal * 0.05);
+  discountAmt = (parmSubTotal * 0.05);
   
-  vatAmt = ((parmstotal - discountAmt) * 0.1);
+  vatAmt = ((parmSubTotal - discountAmt) * 0.1);
   
-  totalPrice = ((parmstotal + vatAmt) - discountAmt);
+  totalPrice = ((parmSubTotal + vatAmt) - discountAmt);
   
-  display(subtotal, discountAmt, vatAmt, totalPrice);
+  display(subTotal, discountAmt, vatAmt, totalPrice);
 }
 
 
-function display(val1, val2, val3, val4){
+function display(parm1, parm2, parm3, parm4){
   
-  document.getElementById("subtotal").value = val1;
-  document.getElementById("discount").value = val2;
-  document.getElementById("vat").value = val3;
-  document.getElementById("total").value = val4;
+  document.getElementById("subtotal").value = parm1;
+  document.getElementById("discount").value = parm2;
+  document.getElementById("vat").value = parm3;
+  document.getElementById("total").value = parm4;
         
   enablebtnProceed();
 }
