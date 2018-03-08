@@ -1,111 +1,68 @@
 /* global $ */
 
 function validateName(){
-    var Name;
     
-    Name=document.getElementById("name").value;
+    var name;
     
-    if(Name==""){
-        alert("Please enter your name");
-        
+    name = document.getElementById("user_name").value;
+
+    if (name == ""){
+        alert("Please enter a name.");
     }
-    
+    else if (!name.match(/^[a-zA-Z_ ]+$/)){
+        alert('Only letters are allowed in a name.');
+    }
     else{
         validateEmail();
     }
+
 }
 
-   
-   
-   
-   
-   
-    function validateEmail(){
+function validateEmail(){
     
     var email;
-   
-     email=document.getElementById("email_address").value;
     
+    email = document.getElementById("user_email").value;
     
     if (email == ""){
-        alert("Please enter your email correctly");
-        
+        alert("please enter an email.");
     }
-    
-    else if (validateUserEmail==false){
-    alert("Please Enter a Valid Email");
-    
-        
+    else if (validateInputEmail(email) == false){
+        alert("Please enter a valid Email ID");
     }
-    
     else{
-        validatepin();
-}
-
-        
+        validatePin();
     }
-    
-    
-    
-    
-    
-   function validateUserEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-    
-    //Got code from https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
 }
-    
-    
-    
-    
-    
-    
-    
-    function validatepin(){
 
+function validatePin(){
     
-
-    var pin;
-
+var pin;
     
-
     pin = document.getElementById("user_pin").value;
-
     
-
     if (pin == ""){
-
-        alert("Please enter your PIN");
-        document.form.name.focus();
-
+        alert("Please enter your PIN.");
     }
-
-    else if (String(pin).length < 4){
-
-        alert("Please make sure your PIN is accurate");
-        document.form.name.focus();
-
+    else if (pin.length < 4){
+        alert("Your PIN must be 4 digits.");
     }
     else{
-        enablebtnPurchase();
+        enablebtnPurchase()
     }
 }
 
-
-
-
-
+function validateInputEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+    }
+    
 function enablebtnPurchase(){
-
+    
     $('#btnPurchase').prop('disabled', false);
-
-}
-
-
-
-function disablebtnPurchase(){
-
+    }
+    
+function disablebtnPurchase() {
+    
     $('#btnPurchase').prop('disabled', true);
-
-}
+    }
