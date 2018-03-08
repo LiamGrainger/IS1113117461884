@@ -99,106 +99,141 @@ h1:before {
                  padding: 5px;
                 margin: 5px auto;
                  text-align:center;
+                        font-family: "Segoe UI";
                 }
                 
-                #divNavBartwo {
+                #divNavBartwoo {
                 width: 550px;
                 border-color: black;
                 border-style: none;
                 background-color: #FFFFFF;
                 padding: 15px;
                 margin: 5px auto;
+                font-family: "Segoe UI";
+                font-size: 12px;
                 }
 </style>
 
     </head>
     
     <body>
-   <h1 style="background-color:white;" class="mainheading"> Shop </h1>
-        </br>
-        <ul>
-           <li> <a class="active" href="Homepage"> Home </a></li>
-           <li> <a class="active" href="ebusiness/business.html"> Business Home </a></li>
-           <li> <a class="active" href="info.html"> About Us </a></li>
-           
-        
-        
-       </ul>
+  
        
-       <br/>
        
-       <h2>Please Select a Product</h2>
-       <br/>
+       
+       
         
         <form method="POS1" action="Ebus2.php">
-            <label for="salesforce">
+         <p align="center"><img src="http://www.microsys.ch/wp-content/uploads/2015/09/Einkaufswagen-weitere-Produkte-1024x777.png" alt="clouds" height="140" width="150"></p>
+             <div class=title align="middle" style="font-size:180%" ><h1> Choose your Product </h1>
+ <div class="row">
+  
+  <!-- SALESFORCE -->
+  <div class="column" style="background-color:#ffffff;border-left: 3px solid black; border-top: 3px solid black;border-bottom: 3px solid black;border-right: 3px solid black ;">
+    <h2 align = "center"> <img src="https://seeklogo.com/images/S/salesforce-logo-273F95FE60-seeklogo.com.png" height=100 width =100></h2>
+    <hr size="3" color=black>
+    <p align= "middle">  <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" checked onclick="disablebtnProceed()"/>
-                Salesforce @ $100
+                $100
             </label>
-            
-            <br/>
-            <br/>
-            
+            </p>
+  </div>
+  
+  
+  <!-- CLOUD9 -->
+  <div class="column" style="background-color:#ffffff;border-top: 3px solid black;border-bottom: 3px solid black">
+    <h2 align = "center"><img src="http://sciezkaprogramisty.pl/wp-content/uploads/2018/02/AWSCloud9_logo_color_400x400.png" height=100 width =100></h2>
+    <hr size="3" color=black>
+    <p align= "middle"> 
              <label for="cloud9">
                 <input type="radio" id="cloud9" name="product" onclick="disablebtnProceed()"/>
-                Cloud9 @ $200
-            </label>
-            <br/>
-            <br/>
-            
+                $200
+            </label></p>
+  </div>
+  <!-- AWS-->
+  
+  <div class="column" style="background-color:#ffffff;border-right: 3px solid black; border-left: 3px solid black;border-top: 3px solid black;border-bottom: 3px solid black">
+    <h2 align = "center"><img src="https://a0.awsstatic.com/main/images/logos/aws_logo_smile_1200x630.png" height=100 width =130></h2>
+    <hr size="3" color=black>
+    <p align = "middle">     <label for "aws">
+                <input type="radio" id="aws" name="product" onclick="disablebtnProceed()"/>
+                $300
+            </label></p> 
+  </div>
+  
+  <!-- GMAIL -->
+  <div class="column" style="background-color:#ffffff; border-right: 3px solid black; border-top: 3px solid black;border-bottom: 3px solid black">
+    <h2 align = "center"><img src="https://png.icons8.com/color/1600/gmail.png" height=100 width =100></h2>
+    <hr size="3" color=black>
+    <p align= "middle">   
              <label for="gmail">
                 <input type="radio" id="gmail" name="product"  onclick="disablebtnProceed()"/>
-                Gmail @ $400
+                $400
             </label>
+            </p>
+  </div>
+</div>
+         
+         <br>
+         <br>
+         <br>
             
-            <br/>
-            <br/>
-            <label for "aws">
-                <input type="radio" id="aws" name="product" onclick="disablebtnProceed()"/>
-                AWS @ 300$
-            </label>
-            
-            <br/>
-            <br/>
-            
+          <div id="divWrapper">
+  <div id="divHeader">
+   <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/8949-200.png" height=100 width =100>
+   <h1 style=font-size:18px>Summary</h1>
+   <div id="divNavBartwoo"> 
+           
             <label for="subtotal">
                 Sub Total
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="subtotal" value="0.00" readonly/>
             </label>
+   <br>
+   <br>
+          <label for="discount">
+                      Discount @ 5%
+                      <input type="text" id="discount" value="0.00" readonly/>
+                  </label>
+            <br>
+            <br>
             
-            <br/>
-            <br/>
-            
-            <label for="discount">
-                Discount @ 5%
-                <input type="text" id="discount" value="0.00" readonly/>
-            </label>
-            
-            <br/>
-            <br/>
-            
+   
             <label for="vat">
                 VAT @ 10%
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="vat" value="0.00" readonly/>
             </label>
-             
-             <br/>
-             <br/>
-             <label for="total">
+            <br>
+           <br>
+            <label for="total">
                  Total
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="total" name="total" value="0.00" readonly/>
              </label>
+              <hr size="3" color="black">
              
-        <br/>
-        <br/>
-        <button type="submit" id="btnProceed" disabled> Add to Shopping Cart</button>
-        <a role="button" href="Ebus1.php">Clear Choice</a>
+               <button onclick="calcSub()">Calculate Cost</button>
+              <button type="submit" id="btnProceed" disabled> Add to Shopping Cart</button>
+ 
              
         </form>
-        
-       <br/>
-       
-       
-        <button onclick="calcSub()">Calculate Cost</button>
+            
+   
+   
+            <a role="button" href="Ebus1.php">Clear Choice</a>
+   
+   
+   </div>
+      
+     
+    
+   </div>
+  </div>
+ 
+            
+            
+            
+      
+    
+            
+           
     </body>
 </html>
