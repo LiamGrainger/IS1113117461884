@@ -97,9 +97,9 @@ session_start()
          <hr>
          <a href="cv/cv_page1.html">CV</a>
           <hr>
-           <a href="ebusiness/EbusMenu.html">E-Business</a>
+           <a href="../ebusiness/EbusMenu.html">E-Business</a>
            <hr>
-            <a href="interests/ihomepage.html">Interests</a>
+            <a href="../interests/ihomepage.html">Interests</a>
             <hr>
          <a href="https://dashboard.heroku.com/apps/is1113117461884">Heroku</a>
          <hr>
