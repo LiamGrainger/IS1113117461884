@@ -1,5 +1,6 @@
 /* global $ */
 
+/* Function to do Calculations, sourced from ID's */
 function calcSub(){
     
     var argSubTotal;
@@ -20,21 +21,21 @@ function calcSub(){
     calcDisVatTotal(argSubTotal);
 }
 
-
-function calcDisVatTotal(parmSubTotal){
-  var subTotal = parmSubTotal
-  var discountAmt;
-  var vatAmt;
-  var totalPrice;
-
-  discountAmt = (parmSubTotal * 0.05);
-  
-  vatAmt = ((parmSubTotal - discountAmt) * 0.1);
-  
-  totalPrice = ((parmSubTotal + vatAmt) - discountAmt);
-  
-  display(subTotal, discountAmt, vatAmt, totalPrice);
-}
+/* Code for the Vat Discount */
+      function calcDisVatTotal(parmSubTotal){
+        var subTotal = parmSubTotal
+        var discountAmt;
+        var vatAmt;
+        var totalPrice;
+      
+        discountAmt = (parmSubTotal * 0.05);
+        
+        vatAmt = ((parmSubTotal - discountAmt) * 0.1);
+        
+        totalPrice = ((parmSubTotal + vatAmt) - discountAmt);
+        
+        display(subTotal, discountAmt, vatAmt, totalPrice);
+      }
 
 
 function display(parm1, parm2, parm3, parm4){
